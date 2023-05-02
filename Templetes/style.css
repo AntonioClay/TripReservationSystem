@@ -1,0 +1,57 @@
+body {
+	background-color: white;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	background-color: darkgray;
+	color: red;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav a {
+	color: red;
+	text-decoration: none;
+}
+
+form {
+	background-color: white;
+	border: 1px solid black;
+	margin: 0 auto;
+	max-width: 500px;
+	padding: 20px;
+}
+
+form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+form select {
+	display: block;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+form input[type="submit"] {
+	background-color: black;
+	border: none;
+	color: white;
+	cursor: pointer;
+	padding: 10px 20px;
+}
