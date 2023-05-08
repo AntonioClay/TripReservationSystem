@@ -12,7 +12,108 @@
 			<li><a href="/reserve">Reserve</a></li>
 		</ul>
 	</nav>
-	<h1>Reserve a Seat</h1>
-	<!-- reservation form code goes here -->
+	<div class="container">
+	<form method="POST" action="/seat_selection">
+        <h1 class="res">Reserve Your Seat</h1>
+
+		<h2 class="SC">Seating Chart</h2>
+		<h2 class="XO">X = Reserved Seat O = Available Seat</h2>
+		
+		<div class="grid-container">
+			<div class="grid-row">
+			  <div class="grid-item" data-seat="1A">["O"]</div>
+			  <div class="grid-item" data-seat="1B">["O"]</div>
+			  <div class="grid-item" data-seat="1C">["O"]</div>
+			  <div class="grid-item" data-seat="1D">["O"]</div>
+			  <div class="grid-item" data-seat="1E">["O"]</div>
+			  <div class="grid-item" data-seat="1F">["O"]</div>
+			  <div class="grid-item" data-seat="1G">["O"]</div>
+			  <div class="grid-item" data-seat="1H">["O"]</div>
+			  <div class="grid-item" data-seat="1I">["O"]</div>
+			  <div class="grid-item" data-seat="1J">["O"]</div>
+			  <div class="grid-item" data-seat="1K">["O"]</div>
+			  <div class="grid-item" data-seat="1L">["O"]</div>
+			</div>
+			<div class="grid-row">
+			  <div class="grid-item" data-seat="2A">["O"]</div>
+			  <div class="grid-item" data-seat="2B">["O"]</div>
+			  <div class="grid-item" data-seat="2C">["O"]</div>
+			  <div class="grid-item" data-seat="2D">["O"]</div>
+			  <div class="grid-item" data-seat="2E">["O"]</div>
+			  <div class="grid-item" data-seat="2F">["O"]</div>
+			  <div class="grid-item" data-seat="2G">["O"]</div>
+			  <div class="grid-item" data-seat="2H">["O"]</div>
+			  <div class="grid-item" data-seat="2I">["O"]</div>
+			  <div class="grid-item" data-seat="2J">["O"]</div>
+			  <div class="grid-item" data-seat="2K">["O"]</div>
+			  <div class="grid-item" data-seat="2L">["O"]</div>
+			</div>
+			<div class="grid-row">
+			  <div class="grid-item" data-seat="3A">["O"]</div>
+			  <div class="grid-item" data-seat="3B">["O"]</div>
+			  <div class="grid-item" data-seat="3C">["O"]</div>
+			  <div class="grid-item" data-seat="3D">["O"]</div>
+			  <div class="grid-item" data-seat="3E">["O"]</div>
+			  <div class="grid-item" data-seat="3F">["O"]</div>
+			  <div class="grid-item" data-seat="3G">["O"]</div>
+			  <div class="grid-item" data-seat="3H">["O"]</div>
+			  <div class="grid-item" data-seat="3I">["O"]</div>
+			  <div class="grid-item" data-seat="3J">["O"]</div>
+			  <div class="grid-item" data-seat="3K">["O"]</div>
+			  <div class="grid-item" data-seat="3L">["O"]</div>
+			</div>		
+			<div class="grid-row">
+				<div class="grid-item" data-seat="4A">["O"]</div>
+				<div class="grid-item" data-seat="4B">["O"]</div>
+				<div class="grid-item" data-seat="4C">["O"]</div>
+				<div class="grid-item" data-seat="4D">["O"]</div>
+				<div class="grid-item" data-seat="4E">["O"]</div>
+				<div class="grid-item" data-seat="4F">["O"]</div>
+				<div class="grid-item" data-seat="4G">["O"]</div>
+				<div class="grid-item" data-seat="4H">["O"]</div>
+				<div class="grid-item" data-seat="4I">["O"]</div>
+				<div class="grid-item" data-seat="4J">["O"]</div>
+				<div class="grid-item" data-seat="4K">["O"]</div>
+				<div class="grid-item" data-seat="4L">["O"]</div>
+			  </div>		  
+		  
+
+		</div>
+
+		<label for="fname">First name:</label>
+  		<input type="text" id="fname" name="fname"><br><br>
+  		<label for="lname">Last name:</label>
+ 		<input type="text" id="lname" name="lname"><br><br>
+
+		<label for="option">Select a Row:</label>
+		<select name="option" id="option">
+			<option value="0">Rows</option>
+			<option value="1">Row 1</option>
+			<option value="2">Row 2</option>
+			<option value="3">Row 3</option>
+			<option value="4">Row 4</option>
+			<option value="5">Row 5</option>
+			<option value="6">Row 6</option>
+			<option value="7">Row 7</option>
+			<option value="8">Row 8</option>
+			<option value="9">Row 9</option>
+			<option value="10">Row 10</option>
+			<option value="11">Row 11</option>
+			<option value="12">Row 12</option>
+		</select>
+
+		<label for="option">Select a Seat:</label>
+		<select name="option" id="option">
+			<option value="0">Seats</option>
+			<option value="1">Seat 1</option>
+			<option value="2">Seat 2</option>
+			<option value="3">Seat 3</option>
+			<option value="4">Seat 4</option>
+			
+		</select>
+			<input type="submit" value="Submit">
+	</form>
+</div>
+	
 </body>
 </html>
